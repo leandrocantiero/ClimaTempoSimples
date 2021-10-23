@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="~/Scripts/views/Cidades/index.js"></script>
+
+<div class="jumbotron">
+    <h1>Clima Tempo</h1>
+    <p class="lead">O objetivo deste app é demonstrar o meu conhecimento a respeito de ASP.NET</p>
+    <p><a href="https://github.com/makinado" target="_blank" class="btn btn-primary btn-lg">Ver GitHub &raquo;</a></p>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Cidades mais quentes hoje</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-between">
+                        <p>${cidade}</p>
+
+                        <span>Máxima: ${tempMax}ºC  Miníma: ${tempMax}ºC</span>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <p>${cidade}</p>
+
+                        <span>Máxima: ${tempMax}ºC  Miníma: ${tempMax}ºC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Cidades mais quentes hoje</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-between">
+                        <p>${cidade}</p>
+
+                        <span>Máxima: ${tempMax}ºC  Miníma: ${tempMax}ºC</span>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <p>${cidade}</p>
+
+                        <span>Máxima: ${tempMax}ºC  Miníma: ${tempMax}ºC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 my-3">
+            <div class="row justify-content-end">
+                <select class="form-select" aria-label="Selecione uma cidade">
+                    <option selected>Selecione uma cidade</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <h3 class="text-center">Abaixo está a previsão para os próximos dias na cidade de ${cidade}</h3>
+        </div>
+
+        <div class="col-sm-12 mt-3">
+            <div class="row justify-content-between">
+                <div class="card" style="width: 8rem;">
+                    <div class="card-header">
+                        <h5>Segunda</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="row justify-content-start">
+                            <p>${status}</p>
+
+                            <span>Máxima: ${tempMax}ºC</span>
+
+                            <span>Miníma: ${tempMax}ºC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
